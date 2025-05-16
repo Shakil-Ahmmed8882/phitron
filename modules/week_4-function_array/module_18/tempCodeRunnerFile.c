@@ -1,1 +1,6 @@
-if (r == 1 && c != 1)
+    if (is_secondary_diagonal && is_scalar_matrix)
+        {
+            printf("Scalar Matrix\n");
+        }else{
+            printf("Not Scalar Matrix\n");
+        }
