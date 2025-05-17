@@ -10,9 +10,7 @@ long long int factorial(int n){
     }
 
     long long int mul =  factorial(n-1);
-    return mul * n;
-
-
+    return mul * n; 
 }
 
 
