@@ -5,7 +5,7 @@ int main()
 {
     char s[100]; 
 
-    cin >> s; 
+    cin.getline(s, 101) >> s; 
     cout << s;
     return 0;
 }
