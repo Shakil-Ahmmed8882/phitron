@@ -1,31 +1,33 @@
 
 
-
 #include <bits/stdc++.h>
 using namespace std;
-int main()
+
+int *sort_it(int n)
 {
 
-    int n;
-    cin >> n;
-    int a[n];
+    int *a = new int[n];
 
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
 
-    sort(a, a + n);
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << a[i] << " ";
-    }
-    cout << endl; 
     sort(a, a + n, greater<int>());
+
+    return a;
+}
+
+int main()
+{
+
+    int n;
+    cin >> n;
+    int *a = sort_it(n);
     for (int i = 0; i < n; i++)
     {
         cout << a[i] << " ";
     }
+
     return 0;
 }
