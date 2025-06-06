@@ -1,24 +1,37 @@
+
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    char x;
-    cin >> x;
 
-    if ((int)x >= 48 && (int)x <= 57)
+    int a;
+    int b;
+    char symbol;
+    cin >> a;
+    cin >> symbol;
+    cin >> b;
+
+    if (symbol == '>')
     {
-        cout << "IS DIGIT"<< endl;
+        if (a > b)
+        {
+            cout << "Right";
+        };
     }
-    else
+
+    if (symbol == '<')
+
     {
-        if((int)x >= 65 && (int)x <= 90){
-            cout << "ALPHA" << endl; 
-            cout << "IS CAPITAL" << endl; 
-        }
-        if((int)x >= 97 && (int)x <= 122){
-            cout << "ALPHA" << endl; 
-            cout << "IS SMALL" << endl; 
+        if (!(a < b))
+        {
+            cout << "Wrong";
+        };
+    }
+    if (symbol == '=')
+    {
+        if (a == b)
+        {
+            cout << "Right";
         }
     }
 
