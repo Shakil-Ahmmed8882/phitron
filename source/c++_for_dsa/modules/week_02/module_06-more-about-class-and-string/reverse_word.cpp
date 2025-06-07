@@ -8,11 +8,14 @@ int main()
 
     stringstream ss(s); 
     string word; 
-
-
+    ss >> word; 
+    reverse(word.begin(), word.end()); 
+    cout << word; 
+    
+    
     while(ss >> word){
         reverse(word.begin(), word.end()); 
-        cout << word << " ";
+        cout << " " << word;
     }
 
     
