@@ -23,7 +23,7 @@ main()
 {
     Student Rahim("Rahim", 35); 
     Student Karim("Karim", 28); 
-
+    
     Rahim.print(); 
     Karim.print(); 
 
