@@ -1,4 +1,11 @@
-3
-shakil 1 5
-Sami 11 4
-Sultan 9 2
+10
+Shakil 1 5  
+Sami 11 4  
+Sultan 9 2  
+Ayaan 4 8  
+Farhan 7 6  
+Hadi 3 9  
+Zayan 10 3  
+Imran 6 7  
+Bilal 2 10  
+Noman 8 1  
