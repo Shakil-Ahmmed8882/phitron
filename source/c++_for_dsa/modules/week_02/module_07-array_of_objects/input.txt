@@ -1,7 +1,4 @@
 3
-shakil Ahmmed 
-1 5
-Sami Hossain  
-11 4
-Sultan Hossain 
-9 3
+shakil 1 5
+Sami 11 4
+Sultan 9 2
