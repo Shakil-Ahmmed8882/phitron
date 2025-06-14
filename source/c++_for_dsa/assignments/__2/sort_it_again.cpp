@@ -13,27 +13,17 @@ public:
     int math_marks;
     int eng_marks;
 };
-
 bool compare(Student l, Student r)
 {
-
-    
-    if (l.eng_marks > r.eng_marks) return true; 
+    if (l.eng_marks > r.eng_marks) return true;
 
     if (l.eng_marks == r.eng_marks) {
-        if(l.math_marks > r.math_marks){
-            return true; 
-        }else{
-            return l.id < r.id;
-        }
-    }; 
-    
-    
-    return false; 
+        if (l.math_marks > r.math_marks) return true;
+        if (l.math_marks == r.math_marks) return l.id < r.id;
+        return false;
+    }
 
-
-
-    
+    return false;
 }
 
 int main()
