@@ -1,10 +1,10 @@
+Ayaan 4 44
+Farhan 7 44
+Sultan 9 44
+Sami 11 44
 Bilal 2 10
 Hadi 3 9
-Ayaan 4 8
 Imran 6 7
-Farhan 7 6
 Shakil 1 5
-Sami 11 4
 Zayan 10 3
-Sultan 9 2
 Noman 8 1

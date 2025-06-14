@@ -1,9 +1,9 @@
 10
 Shakil 1 5  
-Sami 11 4  
-Sultan 9 2  
-Ayaan 4 8  
-Farhan 7 6  
+Sami 11 44 
+Sultan 9 44  
+Ayaan 4 44  
+Farhan 7 44  
 Hadi 3 9  
 Zayan 10 3  
 Imran 6 7  
