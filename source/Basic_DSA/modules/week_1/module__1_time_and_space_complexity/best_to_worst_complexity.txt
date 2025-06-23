@@ -1,0 +1,20 @@
+
+
+
+
+
+// N = 1000
+// base = 2
+
+Constant: O(1) -> 1 
+Linear: O(N)  -> 1000
+Logarithmic: O(logN) -> 10 // cutting half every time
+Square root: O(sqrt(N)) -> 32
+Quadratic : O(N*N) -> 1000  
+                     *1000
+                      ----
+                      1,000,000
+Linearithmic : O(NlogN) ->  1000 × log₂(1000) ≈ 1000 × 10 = 10,000 steps
+
+
+
