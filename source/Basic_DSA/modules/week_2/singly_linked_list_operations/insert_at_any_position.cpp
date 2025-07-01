@@ -13,17 +13,23 @@ public:
     }
 };
 
-void insert_at_any_pos(Node* &head, int val)
+void insert_at_any_pos(Node *head, int idx, int val)
 {
     Node *newNode = new Node(val);
-    newNode->next = head;
-    head = newNode;
+    Node *temp = head;
+
+    for (int i = 1; i < idx; i++) // o(n)
+    {
+        temp = temp->next;
+    }
+    newNode->next = temp->next;
+    temp->next = newNode;
 }
 
 void print_linked_list(Node *head)
 {
 
-    Node* temp = head;
+    Node *temp = head;
     while (temp != NULL)
     {
         cout << temp->val << endl;
@@ -39,11 +45,9 @@ int main()
 
     head->next = a;
     a->next = b;
-    
 
-    insert_at_any_pos(head, 100);
-    insert_at_any_pos(head, 200);
-    insert_at_any_pos(head, 300);
+    insert_at_any_pos(head, 2, 100);
+    insert_at_any_pos(head, 2, 300);
     print_linked_list(head);
     return 0;
 }
