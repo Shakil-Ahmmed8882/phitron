@@ -28,21 +28,20 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = tail->next;
 };
 
-void delete_at_tail(Node *&head, int idx)
+void sort_linked_list(Node *head)
 {
-    if (head == NULL)
-    {
-        return;
-    };
 
-    Node *temp;
-    for (int i = 0; i < idx; i++)
+    for (Node *i = head; i->next != NULL; i = i->next)
     {
-        temp = head->next;
+
+        for (Node *j = i->next; j  != NULL; j =  j->next)
+        {
+            if (i->val > j->val)
+            {
+                swap(i->val, j->val);
+            }
+        }
     }
-    Node *deleteNode = temp->next;
-    temp->next = temp->next->next;
-    delete deleteNode;
 }
 
 void print_linked_list(Node *head)
@@ -72,8 +71,7 @@ int main()
 
         insert_at_tail(head, tail, val);
     }
-    delete_at_tail(head, 1);
-    delete_at_tail(head, 2);
+    sort_linked_list(head);
     print_linked_list(head);
 
     return 0;
