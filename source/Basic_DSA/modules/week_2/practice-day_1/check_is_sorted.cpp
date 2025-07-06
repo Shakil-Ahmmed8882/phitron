@@ -29,7 +29,7 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = tail->next;
 };
 
-bool check_is_sorted(Node *head)
+bool check_are_2_linked_list_same(Node *head)
 {
     Node *current = head;
     bool is_sorted = true;
@@ -48,10 +48,10 @@ bool check_is_sorted(Node *head)
     return is_sorted;
 };
 
-void print_middle_value(Node *head)
+void print(Node *head)
 {
     Node *current = head;
-    bool is_sorted = check_is_sorted(head);
+    bool is_sorted = check_are_2_linked_list_same(head);
     if (is_sorted)
     {
         cout << "YES";
@@ -78,6 +78,6 @@ int main()
         insert_at_tail(head, tail, val);
     };
 
-    print_middle_value(head);
+    print(head);
     return 0;
 }
