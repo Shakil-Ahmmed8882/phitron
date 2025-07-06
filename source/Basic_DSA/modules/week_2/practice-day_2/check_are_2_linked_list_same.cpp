@@ -29,26 +29,19 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = tail->next;
 };
 
-bool check_are_2_linked_list_same(Node *head1, Node *head2)
+int getSize(Node *head)
 {
 
-    Node *current1 = head1;
-    Node *current2 = head2;
-
-    while (current1 != NULL && current2 != NULL)
+    Node *current = head;
+    int count = 0;
+    while (current != NULL)
     {
-
-        if (current1->val != current2->val)
-        {
-            return false;
-        }
-
-        current1 = current1->next;
-        current2 = current2->next;
+        count++;
+        current = current->next;
     }
 
-    return current1 == NULL && current2 == NULL;
-};
+    return count; 
+}
 
 void print(bool is_same)
 {
@@ -93,8 +86,9 @@ int main()
         insert_at_tail(head2, tail2, val);
     };
 
-    bool is_same = check_are_2_linked_list_same(head1, head2);
-    print(is_same);
+    int size1 = getSize(head1);
+    int size2 = getSize(head2);
+    print(size1 == size2);
 
     return 0;
 }
