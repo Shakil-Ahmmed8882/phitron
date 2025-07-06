@@ -29,30 +29,26 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = tail->next;
 };
 
-int getSize(Node *head)
+int getMax(Node *head)
 {
 
     Node *current = head;
-    int count = 0;
+    int max_value = INT_MIN;
     while (current != NULL)
     {
-        count++;
+        max_value = max(max_value, current->val);
         current = current->next;
     }
 
-    return count;
+    return max_value;
 }
 
 void print(Node *head)
 {
 
     Node *current = head;
-    if (current == NULL)
-    {
-        return;
-    }
-    print(current->next);
-    cout << current->val << endl;
+    int max_value = getMax(head);
+    cout << max_value << endl;
 }
 
 int main()
