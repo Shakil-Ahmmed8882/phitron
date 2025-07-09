@@ -1,3 +1,5 @@
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,7 +20,6 @@ public:
 void print_forward(Node *head)
 {
     Node *current = head;
-
     while (current != NULL)
     {
         cout << current->val << endl;
@@ -26,37 +27,38 @@ void print_forward(Node *head)
     }
 }
 
-void insert_at_head(Node *&head, Node *&tail, int val)
+void insert_at_tail(Node *&head, Node *&tail, int val)
 {
 
     Node *newNode = new Node(val);
+
     if (head == NULL)
     {
         head = newNode;
         tail = newNode;
         return;
     }
-    newNode->next = head;
-    head->prev = newNode;
-    head = newNode;
+    tail->next = newNode;
+    newNode->prev = tail;
+    tail = newNode;
 }
+
 int main()
 {
-    Node *head = new Node(10);
-    Node *a = new Node(20);
-    Node *b = new Node(30);
-    Node *tail = new Node(490);
+    // Node *head = new Node(10);
+    // Node *a = new Node(20);
+    // Node *tail = new Node(30);
+    Node *head = NULL;
+    Node *tail = NULL;
 
-    head->next = a;
-    a->prev = head;
+    // head->next = a;
+    // a->prev = head;
 
-    a->next = b;
-    b->prev = a;
+    // a->next = tail;
+    // tail->prev = a;
 
-    b->next = tail;
-    tail->prev = b;
-    insert_at_head(head, tail, 100);
-    insert_at_head(head, tail, 500);
+    insert_at_tail(head, tail, 200);
+    insert_at_tail(head, tail, 400);
     print_forward(head);
 
     return 0;
