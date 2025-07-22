@@ -1,0 +1,19 @@
+
+    // q.push(10);
+    // q.push(20);
+    // q.push(30);
+    // q.push(40);
+    // q.push(50);
+    // q.push(60);
+    // q.push(70);
+
+    // if (!q.empty())
+    // {
+    //     cout << q.front() << endl;
+    //     q.pop();
+    // }
+    // if (!q.empty())
+    // {
+    //     cout << q.front() << endl;
+    //     q.pop();
+    // }
