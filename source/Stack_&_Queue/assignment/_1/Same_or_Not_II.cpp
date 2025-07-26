@@ -92,8 +92,8 @@ public:
    void pop(){
         sz--; 
         Node* dn = head; 
-        delete dn; 
         head = head->next; 
+        delete dn; 
         if(head == NULL) {
             tail = NULL; 
             return; 
