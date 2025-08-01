@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -15,37 +16,40 @@ public:
     }
 };
 
-int count_nodes(Node *root)
+int count_leaf_node(Node *root)
 {
 
     if (!root)
     {
         return 0;
     }
-    int left_count = count_nodes(root->left);
-    int right_count = count_nodes(root->right);
-    return left_count + right_count + 1;
+
+    if (root->left == NULL && root->right == NULL)
+        return 1;
+
+    int left_count = count_leaf_node(root->left);
+    int right_count = count_leaf_node(root->right);
+
+    return left_count + right_count; 
 }
 
-Node *input_tree()
+Node *take_input()
 {
     int val;
     cin >> val;
     Node *root = new Node(val);
     queue<Node *> q;
-
-    if (root == NULL)
-        return NULL;
     q.push(root);
-
     while (!q.empty())
     {
-        // extract
+
+        // extract & pop
         Node *parent_node = q.front();
         q.pop();
-        // create left , right node & connect
         int left_val, right_val;
         cin >> left_val >> right_val;
+
+        // make connection
         Node *left_node = new Node(left_val);
         Node *right_node = new Node(right_val);
 
@@ -53,6 +57,7 @@ Node *input_tree()
             parent_node->left = NULL;
         else
             parent_node->left = left_node;
+
         if (right_val == -1)
             parent_node->right = NULL;
         else
@@ -70,9 +75,7 @@ Node *input_tree()
 
 int main()
 {
-
-    Node *root = input_tree();
-    int count = count_nodes(root);
-    cout << count << endl;
+    Node *root = take_input();
+    cout << count_leaf_node(root) << endl; 
     return 0;
 }
