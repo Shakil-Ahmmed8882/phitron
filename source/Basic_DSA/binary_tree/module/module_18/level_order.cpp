@@ -13,7 +13,7 @@ public:
     }
 };
 
-void level_order(Node* root){
+void print_level_nodes(Node* root){
 
 
     if(!root){
@@ -53,6 +53,6 @@ int main()
     b->left = d; 
     b->right = e; 
 
-    level_order(NULL);
+    print_level_nodes(NULL);
     return 0;
 }
