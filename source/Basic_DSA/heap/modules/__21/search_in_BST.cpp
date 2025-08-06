@@ -25,20 +25,12 @@
  };
 class Solution {
 public:
-    Node* find_node_in_BST(Node*root, int val){
-        if(!root) return NULL; 
-
-        if(root->val == val){
-            return root; 
-        }
-
-        Node* l = find_node_in_BST(root->left, val); 
-        Node* r = find_node_in_BST(root->right, val); 
-        if(l) return l ; 
-        return r; 
-    }
     Node* searchBST(Node* root, int val) {
-        return find_node_in_BST(root, val); 
-        
+        if(!root) return NULL; 
+        if(root->val == val) return root; 
+        if( root->val < val)
+            return searchBST(root->right,val); 
+        else
+            return searchBST(root->left, val); 
     }
 };
