@@ -18,7 +18,6 @@ int main()
         cin >> a >> b;
 
         adj_list[a].push_back(b);
-        adj_list[b].push_back(a);
     }
 
     for (int i = 0; i < n; i++)
