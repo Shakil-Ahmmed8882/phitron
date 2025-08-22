@@ -50,10 +50,12 @@ int main()
 
     int src, des;
     cin >> src >> des;
-    for (int i = 0; i < n; i++)
-    {
-        cout << i << "-> " << level[i] << endl;
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << i << "-> " << level[i] << endl;
+    // }
+
+    cout << level[des]; 
 
     return 0;
 }
