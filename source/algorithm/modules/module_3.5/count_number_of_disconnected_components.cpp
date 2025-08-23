@@ -28,9 +28,20 @@ int main()
         adj_list[a].push_back(b);
         adj_list[b].push_back(a);
     }
+    int cnt = 0; 
 
     memset(vis, false, sizeof(vis));
-    dfs(0);
+
+    for(int i = 0; i < n; i++){
+        if(vis[i] == false){
+            dfs(i); 
+            cnt++; 
+            cout << endl; 
+        }
+    }
+
+    cout << " Number of components: " << cnt; 
 
     return 0;
+
 }
