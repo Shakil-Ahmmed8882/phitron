@@ -7,7 +7,6 @@ vector<pair<int, int>> mv = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
 int r, c;
 bool valid(int cr, int cc){
 
-
     if(cr < 0 || cr >= r || cc < 0 || cc >= c)
         return false; 
     return true ;  
