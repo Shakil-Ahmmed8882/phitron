@@ -9,30 +9,22 @@ using namespace std;
     int parent[105]; 
     bool cycle; 
 
-void bfs(int src){
-    queue<int> q; 
-    q.push(src); 
-    vis[src] = true; 
+void dfs(int src){
     
+    vis[src] = true; 
 
-    while(!q.empty()){
-        int currentSrc = q.front(); 
-        q.pop(); 
-
-        for(int child: adj_list[currentSrc]){
-
-            if(vis[child] && parent[currentSrc] != child){
-                cycle = true; 
-            }
-                
-        
-            if(!vis[child]){
-                q.push(child); 
-                vis[child] = true; 
-                parent[child] = currentSrc; 
-            }
+    for(int child: adj_list[src]){
+        if(vis[child] && parent[src] != child){
+            cycle = true;  
+        }
+        if(!vis[child]){
+            parent[child] = src; 
+            dfs(child); 
         }
     }
+
+
+
 }
 
 
@@ -53,7 +45,11 @@ int main()
     cycle = false; 
     for(int i = 0; i < n; i++){
         if(!vis[i])
-            bfs(i); 
+            dfs(i); 
+    }
+
+    for(int i = 0; i < n; i++ ){
+        cout << i << " parent ->> " << parent[i] << endl; 
     }
 
     if(cycle)
