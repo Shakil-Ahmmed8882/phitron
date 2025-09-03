@@ -13,29 +13,16 @@ public:
     }
 };
 
-int main()
+int dis[10005];
+vector<EdgeList> edge_list;
+int n, e;
+
+void belman_ford()
 {
-    int dis[10005];
-    vector<EdgeList> edge_list;
-    int n, e;
-    cin >> n >> e;
 
-
-    for(int i = 0; i < n; i ++)
-        dis[i] = INT_MAX; 
-
-    dis[0] =  0; 
-
-    while (e--)
+    for (int i = 0; i < n - 1; i++) // o(v)
     {
-        int a, b, c;
-        cin >> a >> b >> c;
-        edge_list.push_back(EdgeList(a, b, c));
-    }
-
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (auto ed : edge_list)
+        for (auto ed : edge_list) // o(e)  = o(ve)
         {
             int a, b, c;
             a = ed.a;
@@ -48,11 +35,31 @@ int main()
             }
         }
     }
+}
 
-    for(int i = 0; i < n; i++){
-        cout << i << " -> " << dis[i] << endl;
+int main()
+{
+    cin >> n >> e;
+
+    for (int i = 0; i < n; i++)
+        dis[i] = INT_MAX;
+
+    dis[0] = 0;
+
+    while (e--)
+    {
+        int a, b, c;
+        cin >> a >> b >> c;
+        edge_list.push_back(EdgeList(a, b, c));
     }
 
+
+    belman_ford();
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << i << " -> " << dis[i] << endl;
+    }
 
     return 0;
 }
