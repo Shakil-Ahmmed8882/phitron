@@ -65,7 +65,7 @@ int main()
         dis[i] = INT_MAX;
 
     dis[0] = 0;
-    
+
     while (e--)
     {
         int a, b, c;
