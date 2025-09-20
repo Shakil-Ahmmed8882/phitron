@@ -43,8 +43,6 @@ void input_tree(){
         if(parent_node->right)
             q.push(right_node); 
     }
-    
-
 }
 
 int main()
