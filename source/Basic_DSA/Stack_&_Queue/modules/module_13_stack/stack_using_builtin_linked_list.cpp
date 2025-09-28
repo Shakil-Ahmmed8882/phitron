@@ -10,6 +10,7 @@ class MyStack {
     void push(int val){
         l.push_back(val);
     }
+    
     void pop(){
         l.pop_back();
     }
@@ -21,6 +22,7 @@ class MyStack {
     int size(){
         return l.size();
     }
+
     bool empty(){
         return l.empty();
     }

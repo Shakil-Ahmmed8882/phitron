@@ -38,7 +38,7 @@ class MyStack {
         sz--; 
         Node* dn = tail; 
         tail = dn->prev; 
-        delete dn; 
+        delete dn;          
         if(tail == NULL) {
             head = NULL; 
             return; 

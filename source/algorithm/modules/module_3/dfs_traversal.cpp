@@ -8,15 +8,17 @@ bool vis[1000];
 void dfs(int src)
 {
 
-    cout << src << " "; 
-    vis[src] = true; 
-    for(int child: adj_list[src])
-        if(!vis[child])
-            dfs(child); 
+    cout << src << " ";
+    vis[src] = true;
+    for (int child : adj_list[src])
+        if (!vis[child])
+            dfs(child);
 }
 
 int main()
 {
+
+
 
     int n, e;
     cin >> n >> e;

@@ -4,6 +4,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+// push
+// pop
+// top
+// size
+// empty 
 class MyStack {
     public: 
     vector<int> v; 
@@ -13,11 +19,9 @@ class MyStack {
     void pop(){
         v.pop_back();
     }
-
     int top(){
         return v.back();
     }
-
     int size(){
         return v.size();
     }

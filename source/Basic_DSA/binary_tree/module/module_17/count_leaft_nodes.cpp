@@ -33,8 +33,6 @@ int count_leaf_node(Node *root)
     return left_count + right_count; 
 }
 
-
-
 Node *take_input()
 {
     int val;

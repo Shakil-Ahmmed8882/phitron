@@ -15,6 +15,14 @@ public:
     }
 };
 
+
+// push 
+// pop
+// front 
+// back 
+// size
+// empty 
+
 class MyQueue
 {
     public:
