@@ -27,33 +27,22 @@ using namespace std;
 vi v(100);
 int dp[105][105];
 
- bool subset_sum( int i , int sum){
+int subset_sum(int i , int max_weight){
+    if(max_weight == 0) return 1; 
+    if(i < 0) return 0;  
 
+    if(dp[i][max_weight] != -1) return dp[i][max_weight];
 
-    
-    if( i < 0 ){
-        if(sum == 0){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    if(dp[i][sum] != -1){
-        return dp[i][sum];
-    }
-
-    if(v[i] <= sum){
-        // 2 options 
-        bool opt1 = subset_sum(i - 1, sum - v[i]); 
-        bool opt2 = subset_sum(i - 1, sum); 
-        dp[i][sum] =  opt1 || opt2; 
-        return dp[i][sum];
-    }else{
-        dp[i][sum] = subset_sum(i - 1, sum);
-        return dp[i][sum]; 
+    if(v[i] <= max_weight){
+        // unbounded: option to take v[i] again
+        int opt1 = subset_sum(i, max_weight - v[i]); 
+        int opt2 = subset_sum(i - 1, max_weight);
+        return dp[i][max_weight] = opt1 || opt2;
+    } else {
+        return dp[i][max_weight] = subset_sum(i - 1, max_weight);
     }
 }
+
 
 
 int main()
@@ -72,25 +61,13 @@ int main()
     // input
     int n;
     cin >> n;
-    int sum = 0; 
-    fr(i, n) {
-        cin >> v[i]; 
-        sum += v[i];
-    };
-
-    if(sum % 2 ==  1){
-        cout << "No\n"
-    }else{
-        if(subset_sum(n - 1, sum / 2)){
-            cout << "Yes\n"; 
-        }else{
-            cout << "No\n";
-        }
-    }
+    fr(i, n) cin >> v[i];
+    int tgt;
+    cin >> tgt;
     
 
 
-    
+    cout << subset_sum(n - 1, tgt) << endl;
 
 
     return 0;

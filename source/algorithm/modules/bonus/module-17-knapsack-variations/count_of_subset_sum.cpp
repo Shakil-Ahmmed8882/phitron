@@ -29,8 +29,6 @@ int dp[105][105];
 
 int subset_sum(int i , int sum){
 
-
-
     if( i < 0 ){
         if(sum == 0){
             return 1;
@@ -45,11 +43,12 @@ int subset_sum(int i , int sum){
 
     if(v[i] <= sum){
         // 2 options 
-        int opt1 = subset_sum(i - 1, sum - v[i]); 
+        int opt1 = subset_sum(i -1 , sum - v[i]); 
         int opt2 = subset_sum(i - 1, sum); 
         dp[i][sum] =  opt1 + opt2; 
         return dp[i][sum];
     }else{
+        
         dp[i][sum] = subset_sum(i - 1, sum);
         return dp[i][sum]; 
     }
