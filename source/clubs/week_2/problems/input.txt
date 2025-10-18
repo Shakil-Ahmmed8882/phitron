@@ -1,5 +1,0 @@
-4
-apple green 
-apple yellow 
-apple red 
-apple red 
