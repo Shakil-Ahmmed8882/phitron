@@ -1,1 +1,6 @@
-16 12
+ firts pos 1
+ last pos 2
+ ans 2
+ firts pos 1
+ last pos 4
+ ans 4

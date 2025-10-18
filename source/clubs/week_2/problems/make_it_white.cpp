@@ -32,43 +32,22 @@ int main()
     cin.tie(NULL);
 
 
-    // input
-    int n;
-    cin >> n;
-    deque<int> dq; 
-    for( int i = 0; i < n; i++){
-        int x; 
-        cin >> x; 
-        dq.push_back(x);
+
+    int t; 
+    cin >> t; 
+
+    while(t--){
+
+        int n; 
+        cin >> n;
+        string s; 
+        cin >> s; 
+
+        int first_pos = s.find("B");
+        int last_pos = s.rfind("B"); 
+        
+        int ans = last_pos - first_pos + 1; 
+        cout << " ans " << ans<< endl;
     }
-
-    int sereja = 0, dima = 0, who = 1;
-
-   
-    while(!dq.empty()){
-        int left = dq.front(); 
-        int right = dq.back(); 
-
-        int mx = max(left, right); 
-        if(who % 2 != 0){
-            sereja += mx; 
-        }else{
-            dima += mx; 
-        }
-
-        if(mx == left){
-            dq.pop_front(); 
-        }else{
-            dq.pop_back(); 
-        }
-
-        who++;
-    }
-
-
-    cout << sereja << " " << dima << "\n";
-
-
-    
     return 0;
 }
