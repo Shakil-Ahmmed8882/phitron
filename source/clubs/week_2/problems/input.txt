@@ -1,5 +1,5 @@
-2
 4
-WBBW
-6
-WBWBBW
+apple green 
+apple yellow 
+apple red 
+apple red 
