@@ -1,5 +1,6 @@
-o it : s)
-        cout << it << " ";
-    nl;
-    cout << "____________________";
-    nl;
+mp){
+    //     vector<int> v = k; 
+    //     fr(i, v.size()){
+    //         cout << v[i] << " ";
+    //     }
+    // }
