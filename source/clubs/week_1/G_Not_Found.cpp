@@ -1,8 +1,12 @@
 
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+
+int main()
+{
+
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
@@ -10,23 +14,28 @@ int main() {
     cin >> s;
 
 
-    if(s.size() == 1){
+    if (s.size() == 1)
+    {
         cout << "None\n";
         return 0;
     }
-    vector<bool> present(26, false); 
+    vector<bool> present(26, false);
 
-    
 
-    for (char c : s) {
+    for (char c : s)
+    {
         present[c - 'a'] = true;
     }
-    for (auto c : present) {
-        cout << c << " "; 
+    for (auto c : present)
+    {
+        cout << c << " ";
     }
 
-    for (int i = 0; i < 26; i++) {
-        if (!present[i]) {
+    
+    for (int i = 0; i < 26; i++)
+    {
+        if (!present[i])
+        {
             cout << char('a' + i) << "\n";
             return 0;
         }
