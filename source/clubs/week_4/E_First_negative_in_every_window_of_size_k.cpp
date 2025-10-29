@@ -1,3 +1,5 @@
+
+//https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
 class Solution {
   public:
     vector<int> firstNegInt(vector<int>& a, int k) {
