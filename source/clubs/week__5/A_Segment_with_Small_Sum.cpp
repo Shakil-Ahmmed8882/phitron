@@ -14,7 +14,8 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
 
-void solve()
+
+    void solve()
 {
    int n; 
    ll k; 
