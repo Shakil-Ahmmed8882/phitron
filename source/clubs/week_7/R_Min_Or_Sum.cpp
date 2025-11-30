@@ -7,6 +7,8 @@ void solve(){
     int n;
     cin>>n;
     int big=0;
+
+    //...
     for(int i=0;i<n;i++){
         int v;
         cin>>v;
@@ -17,8 +19,9 @@ void solve(){
 
 int main(){
     FAST_IO;
-    int tt;
-    cin>>tt;
-    while(tt--) solve();
+    int t;
+    cin>>t;
+    //...
+    while(t--) solve();
     return 0;
 }
