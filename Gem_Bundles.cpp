@@ -10,9 +10,8 @@ void solve()
 {
     ll r, b, g;
     cin >> r >> b >> g;
+    //..
 
-    //.. 
-    
     ll m = min({r, b, g});
     ll t = r + b + g;
     ll left = t - m * 3;
