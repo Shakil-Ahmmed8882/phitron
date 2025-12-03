@@ -39,6 +39,7 @@ void DFS(ll N_rem, ll current_sum, ll min_factor)
             {
                 DFS(d, current_sum + d_prime, d_prime);
             }
+            
         }
     }
 }
