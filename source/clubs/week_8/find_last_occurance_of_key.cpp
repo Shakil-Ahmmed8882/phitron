@@ -38,3 +38,36 @@ int main()
     
     return 0;
 }
+
+
+
+/*
+ALGORITHM 
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/max_path_sum.png?raw=true
+https://raw.githubusercontent.com/Shakil-Ahmmed8882/phitron/refs/heads/main/source/algorithm/modules/assets/floyd_warshall_implementation.png
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/%23blocked_path.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dynamic_programming/factorial.png?raw=true
+✅ fibonacci 
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dynamic_programming/fibonacci_with_memoization.png?raw=true
+knapsack 
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/knap-sack/knap-sack-0-1.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/knap-sack/knap-sack-0-2.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/knap-sack/knap-sack-recursive_calls_complexity.png?raw=true
+
+✅blocked path 
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/%23blocked_path.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/bellman_ford_implementation.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/bellman_ford_theory.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/bfs.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/bfs_in_2d_grid.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/cycle_detection.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dfs.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dijkstra_algo.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dijkstra_implementation_in_bfs.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/disconnected_components_count.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dsu_find_opration.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dynamic_programming-1.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/floyd_warshall_implementation.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/grid_area_validity_check.png.png?raw=true
+https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/why_bellman_ford.png?raw=true
+*/
