@@ -13,9 +13,9 @@ Techniques for breaking problems into overlapping subproblems and optimizing wit
 - Introduction to DP concepts
 - Grid-based DP problems
 
-![Factorial](https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dynamic_programming/factorial.png?raw=true)
 ![Fibonacci](https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dynamic_programming/fibonacci_with_memoization.png?raw=true)
 ![DP Intro](https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dynamic_programming-1.png?raw=true)
+![Factorial](https://github.com/Shakil-Ahmmed8882/phitron/blob/main/source/algorithm/modules/assets/dynamic_programming/factorial.png?raw=true)
 
 ---
 
@@ -110,6 +110,6 @@ Efficient structure for union-find operations in graphs.
 
 ---
 
-### ✅ Outcome
-This collection reflects **structured learning**, **visual reasoning**, and **strong algorithmic foundations**.
-Each diagram was created during hands-on problem solving to deeply understand how algorithms work internally.
+### ✅ Thanks
+Each diagram was created during my problem solving to deeply understand how algorithms/DSA work internally. 
+My friend! Thanks for your time. 
